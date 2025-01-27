@@ -10,9 +10,15 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.1.6",
+    "@types/mdx": "^2.0.13",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "remark-frontmatter": "^5.0.0",
+    "remark-mdx-frontmatter": "^5.0.0"
   },
   "devDependencies": {
     "@content-collections/core": "^0.8.0",
