@@ -15,6 +15,8 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@content-collections/core": "^0.8.0",
+    "@content-collections/next": "^0.2.4",
     "@eslint/eslintrc": "^3",
     "@trivago/prettier-plugin-sort-imports": "^5.2.1",
     "@types/node": "^20",
