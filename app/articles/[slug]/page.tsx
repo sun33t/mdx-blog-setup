@@ -27,9 +27,8 @@ export default async function Page({ params }: ArticlePageProps) {
 
   return (
     <PageContainer>
-      <h1>{`this is the ${slug} article page`}</h1>
       {articleFrontmatter && (
-        <div>
+        <div className="prose mx-auto my-12">
           <Article />
         </div>
       )}
