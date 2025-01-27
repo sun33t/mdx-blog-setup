@@ -9,6 +9,12 @@ const articles = defineCollection({
     title: z.string(),
     isPublished: z.boolean().default(false),
   }),
+  transform: (doc) => {
+    return {
+      ...doc,
+      slug: doc._meta.path.substring(5),
+    };
+  },
 });
 
 export default defineConfig({

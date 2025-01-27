@@ -5,7 +5,7 @@ import { fetchArticleBySlug, fetchPublishedArticles } from "@/lib/articles";
 
 export async function generateStaticParams() {
   const publishedArticles = fetchPublishedArticles();
-  return publishedArticles.map((article) => ({ slug: article._meta.path }));
+  return publishedArticles.map((article) => ({ slug: article.slug }));
 }
 
 type ArticlePageProps = {

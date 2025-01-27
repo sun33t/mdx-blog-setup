@@ -14,9 +14,7 @@ export default function Page() {
           {allPublishedArticles.map((article) => {
             return (
               <li key={article._meta.path}>
-                <Link href={`/articles/${article._meta.path}`}>
-                  {article.title}
-                </Link>
+                <Link href={`/articles/${article.slug}`}>{article.title}</Link>
               </li>
             );
           })}
